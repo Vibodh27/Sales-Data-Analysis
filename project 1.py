@@ -27,7 +27,7 @@ monthly_sales = df.groupby('Month').sum(numeric_only=True)
 print("Monthly Sales:\n", monthly_sales['Sales'])
 
 # Plotting monthly sales
-months = range(1, 13)
+months =  monthly_sales.index
 plt.figure(figsize=(8, 5))
 plt.bar(months, monthly_sales['Sales'])
 plt.xticks(months)
