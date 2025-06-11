@@ -1,0 +1,7 @@
+Order ID,Product,Quantity Ordered,Price Each,Order Date,Purchase Address
+1,iPhone,1,70000,01/01/2023 08:00,"123 Main St, Mumbai, Maharashtra"
+2,Macbook Pro,1,120000,01/01/2023 09:00,"456 Park Ave, Delhi, Delhi"
+3,USB-C Cable,2,500,01/02/2023 10:00,"789 Elm St, Bangalore, Karnataka"
+4,iPhone,1,70000,02/01/2023 11:00,"321 Oak St, Mumbai, Maharashtra"
+5,Lightning Cable,3,800,02/01/2023 12:00,"654 Pine St, Delhi, Delhi"
+6,Macbook Pro,1,120000,03/01/2023 13:00,"987 Maple St, Bangalore, Karnataka"
