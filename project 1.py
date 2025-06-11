@@ -12,12 +12,12 @@ df = df.dropna()  # Remove rows with missing values
 df['Order Date'] = pd.to_datetime(df['Order Date'], errors='coerce')  # Convert to datetime format
 df = df.dropna(subset=['Order Date'])  # Remove rows where Order Date couldn't be parsed
 df['Quantity Ordered'] = pd.to_numeric(df['Quantity Ordered'], errors='coerce')
-df['Price Each'] = pd.to_numeric(df['Price Each'], errors='coerce')
-df = df.dropna(subset=['Quantity Ordered', 'Price Each'])  # Remove rows with invalid numbers
+df['Price of Each product'] = pd.to_numeric(df['Price of Each product'], errors='coerce')
+df = df.dropna(subset=['Quantity Ordered', 'Price of Each product'])  # Remove rows with invalid numbers
 
 # Step 3: Add new helpful columns
 df['Month'] = df['Order Date'].dt.month
-df['Sales'] = df['Quantity Ordered'] * df['Price Each']
+df['Sales'] = df['Quantity Ordered'] * df['Price of Each product']
 df['City'] = df['Purchase Address'].apply(lambda x: x.split(',')[1].strip() if isinstance(x, str) else None)
 
 # Step 4: Analysis
